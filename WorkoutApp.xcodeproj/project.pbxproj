@@ -16,7 +16,7 @@
 		D6286BE8299220D700BDB00B /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BE7299220D700BDB00B /* SessionController.swift */; };
 		D6286BEA2992212500BDB00B /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BE92992212500BDB00B /* ProgressController.swift */; };
 		D6286BEC2992213700BDB00B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BEB2992213700BDB00B /* SettingsController.swift */; };
-		D6286BEF29922A0800BDB00B /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BEE29922A0800BDB00B /* SecondaryButton.swift */; };
+		D6286BEF29922A0800BDB00B /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BEE29922A0800BDB00B /* WAButton.swift */; };
 		D6286BF1299259C100BDB00B /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BF0299259C100BDB00B /* OverviewNavBar.swift */; };
 		D6286BF3299259F800BDB00B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BF2299259F800BDB00B /* BaseView.swift */; };
 		D6286BF72992ADEE00BDB00B /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BF62992ADEE00BDB00B /* WeekView.swift */; };
@@ -40,7 +40,7 @@
 		D6286BE7299220D700BDB00B /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		D6286BE92992212500BDB00B /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		D6286BEB2992213700BDB00B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		D6286BEE29922A0800BDB00B /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		D6286BEE29922A0800BDB00B /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		D6286BF0299259C100BDB00B /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		D6286BF2299259F800BDB00B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		D6286BF62992ADEE00BDB00B /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
@@ -145,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				D6286BF52992ADD600BDB00B /* WeekView */,
-				D6286BEE29922A0800BDB00B /* SecondaryButton.swift */,
 				D6286BF0299259C100BDB00B /* OverviewNavBar.swift */,
 			);
 			path = Views;
@@ -172,6 +171,7 @@
 		D6286BFF2994C94200BDB00B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D6286BEE29922A0800BDB00B /* WAButton.swift */,
 				D6286BF2299259F800BDB00B /* BaseView.swift */,
 				D6286C002994C95600BDB00B /* BaseInfoView.swift */,
 			);
@@ -304,7 +304,7 @@
 				D6286BE8299220D700BDB00B /* SessionController.swift in Sources */,
 				D6286BEA2992212500BDB00B /* ProgressController.swift in Sources */,
 				D6286C012994C95600BDB00B /* BaseInfoView.swift in Sources */,
-				D6286BEF29922A0800BDB00B /* SecondaryButton.swift in Sources */,
+				D6286BEF29922A0800BDB00B /* WAButton.swift in Sources */,
 				D6286BDC2992186100BDB00B /* NavBarController.swift in Sources */,
 				D6286BDA2991778C00BDB00B /* R.swift in Sources */,
 				D6286BD72991758C00BDB00B /* UIColor + ext.swift in Sources */,

@@ -16,6 +16,13 @@ class BaseInfoView: BaseView {
         return label
     }()
     
+    private let button: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = R.Colors.active
+        
+        return button
+    }()
+    
     let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -28,12 +35,18 @@ class BaseInfoView: BaseView {
     init(with title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
+        button.setTitle(buttonTitle, for: .normal)
+        button.isHidden = buttonTitle == nil ? true : false
         
         super.init(frame: .zero)
     }
     
     required init?(coder: NSCoder) {
         super.init(frame: .zero)
+    }
+    
+    func addButtonTarget(target: Any?, action: Selector) {
+        button.addTarget(action, action: action, for: .touchUpInside)
     }
     
 }
@@ -44,6 +57,7 @@ extension BaseInfoView {
         super.setupViews()
         
         setupView(titleLabel)
+        setupView(button)
         setupView(contentView)
     }
     
@@ -57,6 +71,11 @@ extension BaseInfoView {
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+            
+            button.trailingAnchor.constraint(equalTo: trailingAnchor),
+            button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
+            button.widthAnchor.constraint(equalToConstant: 130),
+            button.heightAnchor.constraint(equalToConstant: 30),
             
             contentView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),

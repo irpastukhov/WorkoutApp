@@ -1,5 +1,5 @@
 //
-//  SecondaryButton.swift
+//  WAButton.swift
 //  WorkoutApp
 //
 //  Created by Ivan Pastukhov on 07.02.2023.
@@ -7,14 +7,26 @@
 
 import UIKit
 
-final class SecondaryButton: UIButton {
+final class WAButton: UIButton {
     
-    private let label = UILabel()
-    private let iconView = UIImageView()
+    private let label: UILabel = {
+        let label = UILabel()
+        label.textColor = R.Colors.active
+        label.textAlignment = .center
+        label.font = R.Fonts.helveticaRegular(with: 15)
+        return label
+    }()
+    
+    private let iconView: UIImageView = {
+        let view = UIImageView()
+        view.image = R.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
+        view.tintColor = R.Colors.active
+        return view
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupViews()
         constraintViews()
         configureAppearance()
@@ -31,11 +43,12 @@ final class SecondaryButton: UIButton {
     
 }
 
-private extension SecondaryButton {
+private extension WAButton {
     
     func setupViews() {
-        addSubview(label)
-        addSubview(iconView)
+        
+        setupView(label)
+        setupView(iconView)
     }
     
     func constraintViews() {
@@ -56,15 +69,6 @@ private extension SecondaryButton {
         backgroundColor = R.Colors.secondary
         layer.cornerRadius = 14
         makeSystem(self)
-        
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = R.Colors.active
-        label.textAlignment = .center
-        label.font = R.Fonts.helveticaRegular(with: 15)
-        
-        iconView.translatesAutoresizingMaskIntoConstraints = false
-        iconView.image = R.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = R.Colors.active
         
     }
     
