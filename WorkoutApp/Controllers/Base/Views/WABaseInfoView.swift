@@ -1,5 +1,5 @@
 //
-//  BaseInfoView.swift
+//  WABaseInfoView.swift
 //  WorkoutApp
 //
 //  Created by Ivan Pastukhov on 09.02.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseInfoView: BaseView {
+class WABaseInfoView: BaseView {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -16,12 +16,7 @@ class BaseInfoView: BaseView {
         return label
     }()
     
-    private let button: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = R.Colors.active
-        
-        return button
-    }()
+    private let button = WAButton(with: .primary)
     
     let contentView: UIView = {
         let view = UIView()
@@ -35,7 +30,7 @@ class BaseInfoView: BaseView {
     init(with title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
-        button.setTitle(buttonTitle, for: .normal)
+        button.setTitle(buttonTitle)
         button.isHidden = buttonTitle == nil ? true : false
         
         super.init(frame: .zero)
@@ -51,7 +46,7 @@ class BaseInfoView: BaseView {
     
 }
 
-extension BaseInfoView {
+extension WABaseInfoView {
     
     override func setupViews() {
         super.setupViews()
@@ -74,8 +69,7 @@ extension BaseInfoView {
             
             button.trailingAnchor.constraint(equalTo: trailingAnchor),
             button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            button.widthAnchor.constraint(equalToConstant: 130),
-            button.heightAnchor.constraint(equalToConstant: 30),
+            button.heightAnchor.constraint(equalToConstant: 28),
             
             contentView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),

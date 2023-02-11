@@ -18,7 +18,7 @@ final class OverviewNavBar: BaseView {
     }()
     
     private let allWorkoutsButton: WAButton = {
-        let button = WAButton()
+        let button = WAButton(with: .secondry)
         button.setTitle(R.Strings.Overview.allWorkouts)
         return button
     }()
@@ -70,7 +70,6 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLabel.centerYAnchor.constraint(equalTo: addButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
