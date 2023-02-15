@@ -20,12 +20,13 @@ final class TabBarController: UITabBarController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         configureAppearance()
-//        switchTo(tab: .progress)
+        switchTo(tab: .session)
     }
     
-//    func switchTo(tab: Tabs) {
-//        selectedIndex = tab.rawValue
-//    }
+    func switchTo(tab: Tabs) {
+        selectedIndex = tab.rawValue
+        
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
