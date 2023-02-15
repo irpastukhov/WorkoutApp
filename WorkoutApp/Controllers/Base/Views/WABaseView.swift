@@ -1,5 +1,5 @@
 //
-//  BaseView.swift
+//  WABaseView.swift
 //  WorkoutApp
 //
 //  Created by Ivan Pastukhov on 07.02.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseView: UIView {
+class WABaseView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,7 +25,7 @@ class BaseView: UIView {
     }
 }
 
-@objc extension BaseView {
+@objc extension WABaseView {
     
     func setupViews() {}
     func constraintViews() {}

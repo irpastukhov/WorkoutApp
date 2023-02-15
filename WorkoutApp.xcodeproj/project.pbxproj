@@ -11,14 +11,14 @@
 		D6286BD72991758C00BDB00B /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BD62991758C00BDB00B /* UIColor + ext.swift */; };
 		D6286BDA2991778C00BDB00B /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BD92991778C00BDB00B /* R.swift */; };
 		D6286BDC2992186100BDB00B /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BDB2992186100BDB00B /* NavBarController.swift */; };
-		D6286BDF29921B3F00BDB00B /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BDE29921B3F00BDB00B /* BaseController.swift */; };
+		D6286BDF29921B3F00BDB00B /* WABaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BDE29921B3F00BDB00B /* WABaseController.swift */; };
 		D6286BE129921E2C00BDB00B /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BE029921E2C00BDB00B /* UIView + ext.swift */; };
 		D6286BE8299220D700BDB00B /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BE7299220D700BDB00B /* SessionController.swift */; };
 		D6286BEA2992212500BDB00B /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BE92992212500BDB00B /* ProgressController.swift */; };
 		D6286BEC2992213700BDB00B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BEB2992213700BDB00B /* SettingsController.swift */; };
 		D6286BEF29922A0800BDB00B /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BEE29922A0800BDB00B /* WAButton.swift */; };
 		D6286BF1299259C100BDB00B /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BF0299259C100BDB00B /* OverviewNavBar.swift */; };
-		D6286BF3299259F800BDB00B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BF2299259F800BDB00B /* BaseView.swift */; };
+		D6286BF3299259F800BDB00B /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BF2299259F800BDB00B /* WABaseView.swift */; };
 		D6286BF72992ADEE00BDB00B /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BF62992ADEE00BDB00B /* WeekView.swift */; };
 		D6286BFB2992B4A100BDB00B /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BFA2992B4A100BDB00B /* WeekdayView.swift */; };
 		D6286BFD2994109F00BDB00B /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286BFC2994109F00BDB00B /* Date + ext.swift */; };
@@ -37,14 +37,14 @@
 		D6286BD62991758C00BDB00B /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		D6286BD92991778C00BDB00B /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		D6286BDB2992186100BDB00B /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
-		D6286BDE29921B3F00BDB00B /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		D6286BDE29921B3F00BDB00B /* WABaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseController.swift; sourceTree = "<group>"; };
 		D6286BE029921E2C00BDB00B /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
 		D6286BE7299220D700BDB00B /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		D6286BE92992212500BDB00B /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		D6286BEB2992213700BDB00B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		D6286BEE29922A0800BDB00B /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		D6286BF0299259C100BDB00B /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
-		D6286BF2299259F800BDB00B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D6286BF2299259F800BDB00B /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
 		D6286BF62992ADEE00BDB00B /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		D6286BFA2992B4A100BDB00B /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		D6286BFC2994109F00BDB00B /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D6286BFF2994C94200BDB00B /* Views */,
-				D6286BDE29921B3F00BDB00B /* BaseController.swift */,
+				D6286BDE29921B3F00BDB00B /* WABaseController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				D6286BEE29922A0800BDB00B /* WAButton.swift */,
-				D6286BF2299259F800BDB00B /* BaseView.swift */,
+				D6286BF2299259F800BDB00B /* WABaseView.swift */,
 				D6286C002994C95600BDB00B /* WABaseInfoView.swift */,
 			);
 			path = Views;
@@ -332,8 +332,8 @@
 				D6286BDC2992186100BDB00B /* NavBarController.swift in Sources */,
 				D6286BDA2991778C00BDB00B /* R.swift in Sources */,
 				D6286BD72991758C00BDB00B /* UIColor + ext.swift in Sources */,
-				D6286BDF29921B3F00BDB00B /* BaseController.swift in Sources */,
-				D6286BF3299259F800BDB00B /* BaseView.swift in Sources */,
+				D6286BDF29921B3F00BDB00B /* WABaseController.swift in Sources */,
+				D6286BF3299259F800BDB00B /* WABaseView.swift in Sources */,
 				D6286BFB2992B4A100BDB00B /* WeekdayView.swift in Sources */,
 				D652830B2991702A0072FCAA /* SceneDelegate.swift in Sources */,
 				D6286BEC2992213700BDB00B /* SettingsController.swift in Sources */,
