@@ -18,7 +18,6 @@ enum R {
         static let secondary = UIColor(hexString: "#F0F3FF")
         
         static let titleGray = UIColor(hexString: "#545C77")
-  
     }
     
     enum Strings {
@@ -55,6 +54,14 @@ enum R {
             
             static let elapsedTime = "Elapsed Time"
             static let remainingTime = "Remaining Time"
+            
+            static let workoutStats = "Workout stats"
+            static let averagePace = "Average pace"
+            static let heartRate = "Heart rate"
+            static let totalDistance = "Total distance"
+            static let totalSteps = "Total steps"
+
+            static let stepsCounter = "Steps Counter"
         }
         
         enum Progress {
@@ -81,6 +88,14 @@ enum R {
                 let image = UIImage(systemName: "plus.circle.fill", withConfiguration: config)
                 return image!
             }()
+        }
+        enum Session {
+            enum Stats {
+                static let averagePace = UIImage(systemName: "speedometer")
+                static let heartRate = UIImage(systemName: "bolt.heart")
+                static let totalDistance = UIImage(systemName: "map")
+                static let totalSteps = UIImage(systemName: "figure.walk")
+            }
         }
     }
     

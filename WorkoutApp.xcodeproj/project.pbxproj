@@ -25,6 +25,9 @@
 		D6286C012994C95600BDB00B /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286C002994C95600BDB00B /* WABaseInfoView.swift */; };
 		D6286C04299B838300BDB00B /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286C03299B838300BDB00B /* TimerView.swift */; };
 		D6286C06299B84B100BDB00B /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286C05299B84B100BDB00B /* ProgressView.swift */; };
+		D6286C09299DF4F600BDB00B /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286C08299DF4F600BDB00B /* PercentView.swift */; };
+		D6286C0D299E0BCE00BDB00B /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286C0C299E0BCE00BDB00B /* StatsView.swift */; };
+		D6286C10299E0C1E00BDB00B /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6286C0F299E0C1E00BDB00B /* StatsItemView.swift */; };
 		D65283092991702A0072FCAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65283082991702A0072FCAA /* AppDelegate.swift */; };
 		D652830B2991702A0072FCAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D652830A2991702A0072FCAA /* SceneDelegate.swift */; };
 		D652830D2991702A0072FCAA /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D652830C2991702A0072FCAA /* OverviewController.swift */; };
@@ -51,6 +54,9 @@
 		D6286C002994C95600BDB00B /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		D6286C03299B838300BDB00B /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		D6286C05299B84B100BDB00B /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		D6286C08299DF4F600BDB00B /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
+		D6286C0C299E0BCE00BDB00B /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		D6286C0F299E0C1E00BDB00B /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
 		D65283052991702A0072FCAA /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65283082991702A0072FCAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D652830A2991702A0072FCAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				D6286C07299B84DE00BDB00B /* Timer */,
+				D6286C0A299E03E900BDB00B /* Stats */,
+				D6286C0B299E03F300BDB00B /* Steps */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,9 +203,34 @@
 			isa = PBXGroup;
 			children = (
 				D6286C03299B838300BDB00B /* TimerView.swift */,
+				D6286C08299DF4F600BDB00B /* PercentView.swift */,
 				D6286C05299B84B100BDB00B /* ProgressView.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		D6286C0A299E03E900BDB00B /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				D6286C0E299E0BF900BDB00B /* Views */,
+				D6286C0C299E0BCE00BDB00B /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		D6286C0B299E03F300BDB00B /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		D6286C0E299E0BF900BDB00B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6286C0F299E0C1E00BDB00B /* StatsItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D65282FC2991702A0072FCAA = {
@@ -331,10 +364,13 @@
 				D6286BEF29922A0800BDB00B /* WAButton.swift in Sources */,
 				D6286BDC2992186100BDB00B /* NavBarController.swift in Sources */,
 				D6286BDA2991778C00BDB00B /* R.swift in Sources */,
+				D6286C10299E0C1E00BDB00B /* StatsItemView.swift in Sources */,
 				D6286BD72991758C00BDB00B /* UIColor + ext.swift in Sources */,
+				D6286C09299DF4F600BDB00B /* PercentView.swift in Sources */,
 				D6286BDF29921B3F00BDB00B /* WABaseController.swift in Sources */,
 				D6286BF3299259F800BDB00B /* WABaseView.swift in Sources */,
 				D6286BFB2992B4A100BDB00B /* WeekdayView.swift in Sources */,
+				D6286C0D299E0BCE00BDB00B /* StatsView.swift in Sources */,
 				D652830B2991702A0072FCAA /* SceneDelegate.swift in Sources */,
 				D6286BEC2992213700BDB00B /* SettingsController.swift in Sources */,
 			);
